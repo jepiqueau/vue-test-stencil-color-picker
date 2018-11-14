@@ -1,5 +1,5 @@
 {
-  "name": "vue-test-columnchart",
+  "name": "vue-test-colorpicker",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,11 +11,11 @@
     "Vue",
     "stencil",
     "web component",
-    "chart",
-    "column chart"
+    "color",
+    "color picker"
   ],
   "dependencies": {
-    "stencil-columnchart": "^0.2.3",
+    "stencil-colorpicker": "^0.1.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -32,12 +32,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jepiqueau/vue-test-stencil-column-chart.git"
+    "url": "git+https://github.com/jepiqueau/vue-test-stencil-color-picker.git"
   },
   "author": "Jean Pierre Quéau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jepiqueau/vue-test-stencil-column-chart/issues"
+    "url": "https://github.com/jepiqueau/vue-test-stencil-color-picker/issues"
   },
-  "homepage": "https://github.com/jepiqueau/vue-test-stencil-column-chart#readme"
+  "homepage": "https://github.com/jepiqueau/vue-test-stencil-color-picker#readme"
 }

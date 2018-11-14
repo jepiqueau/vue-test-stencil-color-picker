@@ -1,12 +1,12 @@
-# vue-test-columnchart
-Sample project that shows an integration of [column-chart web component build with StencilJS](https://github.com/jepiqueau/stencil-column-chart) 
+# vue-test-colorpicker
+Sample project that shows an integration of [color-picker web component build with StencilJS](https://github.com/jepiqueau/stencil-color-picker) 
 in Vue.js App.
 
 ## Project setup
 To start a new project using Vue.js, clone this repo to a new directory:
 
 ```bash
-git clone https://github.com/jepiqueau/vue-test-stencil-column-chart.git my-app
+git clone https://github.com/jepiqueau/vue-test-stencil-color-picker.git my-app
 cd my-app
 git remote rm origin
 ```

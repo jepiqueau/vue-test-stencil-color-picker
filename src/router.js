@@ -12,10 +12,10 @@ export default new Router({
       component: Home
     },
     {
-      path: "/columnchart/:type",
-      name: "columnchart",
+      path: "/colorpicker",
+      name: "colorpicker",
       component: () =>
-        import(/* webpackChunkName: "linechart" */ "./views/ColumnChart.vue")
+        import(/* webpackChunkName: "colorpicker" */ "./views/ColorPicker.vue")
     },
     {
       path: "/about",
