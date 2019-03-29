@@ -11,7 +11,9 @@
     <ion-content padding>
       <p>Test Colorpicker Web component in Vue.js</p>
       <ion-button @click="goToAbout" size="large">Go to About</ion-button>
-      <ion-button @click="goToColorPicker" size="large">Color Picker</ion-button>
+      <ion-button @click="goToColorPicker" size="large"
+        >Color Picker</ion-button
+      >
     </ion-content>
   </ion-app>
 </template>

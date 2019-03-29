@@ -1,25 +1,38 @@
 <template>
   <ion-app>
     <ion-header>
-    <ion-toolbar color="primary">
+      <ion-toolbar color="primary">
         <ion-buttons slot="start">
-            <!--
+          <!--
                 *** does not work
             <ion-back-button defaultHref="/"></ion-back-button>
             -->
           <ion-button @click="goBackHome()" size="small">Back</ion-button>
         </ion-buttons>
         <ion-title>Color Picker</ion-title>
-    </ion-toolbar>
+      </ion-toolbar>
     </ion-header>
 
     <ion-content>
-        <template>
-            <ion-button @click="openColorPicker" class="button" color= "dark" fill="outline" round >Color</ion-button>
-            <jeep-colorpicker ref="refcolorpicker" v-on:onColor="getColor" id="colorpicker" color="#55cc45" opacity="0.725" backgroundcolor="#242424"></jeep-colorpicker>
-            <ion-grid ref="refgrid">
-            </ion-grid>
-        </template>
+      <template>
+        <ion-button
+          @click="openColorPicker"
+          class="button"
+          color="dark"
+          fill="outline"
+          round
+          >Color</ion-button
+        >
+        <jeep-colorpicker
+          ref="refcolorpicker"
+          v-on:onColor="getColor"
+          id="colorpicker"
+          color="#55cc45"
+          opacity="0.725"
+          backgroundcolor="#242424"
+        ></jeep-colorpicker>
+        <ion-grid ref="refgrid"> </ion-grid>
+      </template>
     </ion-content>
   </ion-app>
 </template>
