@@ -11,6 +11,8 @@ Vue.config.ignoredElements = [/ion-\w*/];
 Vue.use(Ionic);
 colorpicker(window);
 
+Vue.config.productionTip = false;
+
 
 new Vue({
   router,
