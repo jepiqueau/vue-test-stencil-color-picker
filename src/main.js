@@ -6,15 +6,14 @@ import { defineCustomElements as colorpicker } from "stencil-colorpicker/dist/lo
 
 import Ionic from "@ionic/vue";
 
-Vue.use(Ionic);
-Vue.config.ignoredElements = [/ion-\w*/];
 Vue.config.ignoredElements = [/jeep-\w*/];
-
+Vue.config.ignoredElements = [/ion-\w*/];
+Vue.use(Ionic);
 colorpicker(window);
 
+
 new Vue({
-  el: "#app",
   router,
   store,
   render: h => h(App)
-});
+}).$mount("#app");
