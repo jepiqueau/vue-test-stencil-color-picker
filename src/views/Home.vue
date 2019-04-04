@@ -1,5 +1,5 @@
 <template>
-  <ion-app>
+  <div class="ion-page">
     <ion-header>
       <ion-toolbar color="primary">
         <ion-title>
@@ -7,7 +7,6 @@
         </ion-title>
       </ion-toolbar>
     </ion-header>
-
     <ion-content padding>
       <p>Test Colorpicker Web component in Vue.js</p>
       <ion-button @click="goToAbout" size="large">Go to About</ion-button>
@@ -15,7 +14,7 @@
         >Color Picker</ion-button
       >
     </ion-content>
-  </ion-app>
+  </div>
 </template>
 <script>
 export default {
