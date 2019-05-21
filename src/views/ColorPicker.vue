@@ -11,21 +11,13 @@
 
     <ion-content>
       <template>
-        <ion-button
-          @click="openColorPicker"
-          class="button"
-          color="dark"
-          fill="outline"
-          round
-          >Color</ion-button
-        >
         <jeep-colorpicker
           ref="refcolorpicker"
           v-on:onColor="getColor"
+          v-on:openCpicker="openCpicker"
           id="colorpicker"
           color="#55cc45"
           opacity="0.725"
-          backgroundcolor="#242424"
         ></jeep-colorpicker>
         <ion-grid ref="refgrid"> </ion-grid>
       </template>
@@ -38,8 +30,9 @@ export default {
   name: "colorpicker",
 
   methods: {
-    openColorPicker: function() {
-      this.$refs.refcolorpicker.open();
+    openCpicker: function() {
+      const grid = this.$refs.refgrid;
+      grid.innerHTML = ""     
     },
     getColor: function(ev) {
       const color = ev.detail;
@@ -84,3 +77,17 @@ export default {
   }
 };
 </script>
+<style>
+jeep-colorpicker {
+  --colorpicker-background-color: #242424;
+  --colorpicker-top: 20vh;
+  --colorpicker-left: 15vw;
+  --colorpicker-width: 80vmin;
+  --colorpicker-height: 60vmin;
+  --colorpicker-button-margin-top: 5vh;
+  --colorpicker-button-margin-left: 15vw;
+}
+:root {
+  --gcolorpicker-button-font-size: 24px;
+}
+</style>
