@@ -13,11 +13,12 @@
       <template>
         <jeep-colorpicker
           ref="refcolorpicker"
-          v-on:onColor="getColor"
-          v-on:openCpicker="openCpicker"
+          v-on:JeepColorpickerGetColor="getColor"
+          v-on:JeepColorpickerOpen="openCpicker"
           id="colorpicker"
           color="#55cc45"
           opacity="0.725"
+          buttons="[Color,Valid,Dismiss]"
         ></jeep-colorpicker>
         <ion-grid ref="refgrid"> </ion-grid>
       </template>
@@ -32,7 +33,7 @@ export default {
   methods: {
     openCpicker: function() {
       const grid = this.$refs.refgrid;
-      grid.innerHTML = ""     
+      grid.innerHTML = "";
     },
     getColor: function(ev) {
       const color = ev.detail;
