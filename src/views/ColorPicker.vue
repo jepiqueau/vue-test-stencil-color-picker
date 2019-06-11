@@ -18,7 +18,7 @@
           id="colorpicker"
           color="#55cc45"
           opacity="0.725"
-          buttons="[Color,Valid,Dismiss]"
+          buttons="[Color,V,X]"
         ></jeep-colorpicker>
         <ion-grid ref="refgrid"> </ion-grid>
       </template>
@@ -91,4 +91,8 @@ jeep-colorpicker {
 :root {
   --gcolorpicker-button-font-size: 24px;
 }
+ion-grid{
+    font-size: 12px;
+}
+
 </style>
