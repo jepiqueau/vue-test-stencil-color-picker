@@ -15,6 +15,7 @@
           ref="refcolorpicker"
           v-on:JeepColorpickerGetColor="getColor"
           v-on:JeepColorpickerOpen="openCpicker"
+          v-on:JeepColorpickerClose="closeCpicker"
           id="colorpicker"
           color="#55cc45"
           opacity="0.725"
@@ -35,8 +36,15 @@ export default {
       const grid = this.$refs.refgrid;
       grid.innerHTML = "";
     },
+    closeCpicker: function(ev) {
+      const color = ev.detail.color;
+      this.showColor(color);
+    },
     getColor: function(ev) {
       const color = ev.detail;
+      this.showColor(color);
+    },
+    showColor: function(color) {
       const grid = this.$refs.refgrid;
       if (color !== null) {
         grid.innerHTML =
@@ -75,6 +83,7 @@ export default {
         `;
       }
     }
+
   }
 };
 </script>
