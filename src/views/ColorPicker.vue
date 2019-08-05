@@ -13,9 +13,9 @@
       <template>
         <jeep-colorpicker
           ref="refcolorpicker"
-          v-on:JeepColorpickerGetColor="getColor"
-          v-on:JeepColorpickerOpen="openCpicker"
-          v-on:JeepColorpickerClose="closeCpicker"
+          v-on:jeepColorpickerGetColor="getColor"
+          v-on:jeepColorpickerOpen="openCpicker"
+          v-on:jeepColorpickerClose="closeCpicker"
           id="colorpicker"
           color="#55cc45"
           opacity="0.725"
