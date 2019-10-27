@@ -83,7 +83,6 @@ export default {
         `;
       }
     }
-
   }
 };
 </script>
@@ -100,8 +99,7 @@ jeep-colorpicker {
 :root {
   --gcolorpicker-button-font-size: 24px;
 }
-ion-grid{
-    font-size: 12px;
+ion-grid {
+  font-size: 12px;
 }
-
 </style>
